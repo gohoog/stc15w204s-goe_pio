@@ -26,7 +26,7 @@ int read_input_button()
     unsigned int i, ms;
     int inp = 0, up = 0;
     question++;
-    while (P32 != SWITCH_PRESSED)
+    while (SWITCH_GND != SWITCH_PRESSED)
         question++;
     ms = 30 - (question & 3);
     do
